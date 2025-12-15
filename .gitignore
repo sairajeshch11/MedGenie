@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual envs
+.env
+.venv
+venv/
+
+# Secrets
+.env.*
+*.env
+*.key
+*.secret
+
+# Streamlit
+.streamlit/
+
+# Data & indexes (DO NOT PUSH)
+data/
+indexes/
+raw/
+raw_auto/
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Colab
+.ipynb_checkpoints/
+
+# Backups
+*.bak_*
