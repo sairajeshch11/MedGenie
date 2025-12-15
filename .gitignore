@@ -23,7 +23,7 @@ venv/
 
 # Data & indexes (DO NOT PUSH)
 data/
-indexes/
+# indexes/
 raw/
 raw_auto/
 
