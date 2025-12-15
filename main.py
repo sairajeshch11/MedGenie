@@ -1,7 +1,7 @@
 
-from llm_project.helpers.llm_client import ask_llm
-import llm_project.config as config
-import llm_project.prompts as prompts
+from helpers.llm_client import ask_llm
+import config as config
+import prompts as prompts
 from llm_project.pipelines import analyze_review
 
 def summarize(text: str) -> str:

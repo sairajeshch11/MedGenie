@@ -3,12 +3,12 @@ from __future__ import annotations
 import re
 from typing import Any, Dict, List, Tuple
 
-from llm_project.helpers.llm_client import ask_llm
-import llm_project.config as config
-import llm_project.prompts as prompts
+from helpers.llm_client import ask_llm
+import config as config
+import prompts as prompts
 
-from llm_project.urgency import detect_urgency
-from llm_project.retrieval import retrieve_with_meta
+from urgency import detect_urgency
+from retrieval import retrieve_with_meta
 
 _MED_TRIGGERS = [
     "side effects", "dose", "dosage", "interactions", "contraindications",
