@@ -2,7 +2,7 @@ import re
 
 from typing import Any, Dict, List, Tuple
 
-from llm_project.helpers.llm_client import ask_llm
+from helpers.llm_client import ask_llm
 import llm_project.config as config
 import llm_project.prompts as prompts
 
