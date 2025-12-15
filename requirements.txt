@@ -1,0 +1,8 @@
+streamlit
+openai
+requests
+python-dotenv
+numpy
+faiss-cpu
+sentence-transformers
+rank-bm25
