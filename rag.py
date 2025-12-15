@@ -3,11 +3,11 @@ import re
 from typing import Any, Dict, List, Tuple
 
 from helpers.llm_client import ask_llm
-import llm_project.config as config
-import llm_project.prompts as prompts
+import config as config
+import prompts as prompts
 
-from llm_project.urgency import detect_urgency
-from llm_project.retrieval import retrieve_with_meta
+from urgency import detect_urgency
+from retrieval import retrieve_with_meta
 # --- lightweight retrieval gating (prevents off-topic symptom chunks) ---
 _STOP = {
     "what","to","do","for","a","an","the","and","or","of","in","on","with","is","are","was","were",
@@ -137,7 +137,7 @@ def answer_question(query: str, top_k: int = 3) -> Dict[str, Any]:
 
     # Medication mode (optional): import lazily to avoid circular imports
     try:
-        from llm_project.medications import is_medication_question, answer_medication_question
+        from medications import is_medication_question, answer_medication_question
         if is_medication_question(query):
             med_res = answer_medication_question(query, top_k=top_k)
             # keep urgency/confidence from med pipeline
